@@ -5,11 +5,15 @@ simple version of Etherscan - Ethereum blockchain indexer with REST API
 To run indexer you need Python3.5, after that:
 1) Install dependencies in your virtualenv:
 
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 2) Create your PostgreSQL database, then create schema and indexes:
 
-```cat schema.sql | psql database_name```
+```
+cat schema.sql | psql database_name
+```
 
 3) Add tokens fixture to avoid long updates of token's quantity:
 
@@ -31,7 +35,8 @@ python3 ./pool.py debug
 ```
 
 7) Start REST on localhost:
-``` python ./rest_simple.py 
+```
+python ./rest_simple.py 
 
  * Serving Flask app "rest_simple" (lazy loading)
  * Environment: production
