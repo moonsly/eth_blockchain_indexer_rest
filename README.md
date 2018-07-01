@@ -20,8 +20,10 @@ To run indexer you need Python3.5, after that:
 5) Run blockchain indexer - by default it starts parsing from 'latest' block, if you inserted some block with number=block.id - it starts from that block.
 It can recover automatically after failing and should be placed to supervisrod config.
 
-```. env/bin/activate
-python3 ./pool.py debug```
+```
+. env/bin/activate
+python3 ./pool.py debug
+```
 
 6) Add token updater to crontab:
 ```
@@ -36,7 +38,8 @@ python3 ./pool.py debug```
    WARNING: Do not use the development server in a production environment.
    Use a production WSGI server instead.
  * Debug mode: on
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)```
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ ```
  
  Great! Now you should have some blockchain records in your database (parsed by pool.py) and you can filter your blockchain data via REST on URL
  http://127.0.0.1:5000/api
