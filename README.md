@@ -28,7 +28,7 @@ It can recover automatically after failing and should be placed to supervisrod c
 . env/bin/activate
 python3 ./pool.py debug
 ```
-Average time of ETH block parsing (with good infura ping and on Ubuntu 4xCPU 2Gb RAM) is about 3 seconds VS average ETH new block time is about 10-15 seconds, so it works fine in realtime with ETH blocks, and can recover missing blocks after little downtime of blockchain parsing.
+Average time of ETH block parsing (with good infura.io ping and on Ubuntu 4 core CPU 4Gb RAM) is about 2-3 seconds VS average ETH new block time is about 10-15 seconds, so it works fine in realtime with ETH blocks, and can recover missing blocks after little downtime of blockchain parsing.
 
 6) Add token updater to crontab - to parse new token's decimals/symbols/total supply each 5 minutes:
 ```
