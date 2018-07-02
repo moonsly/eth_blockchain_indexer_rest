@@ -23,12 +23,12 @@ cat schema.sql | psql database_name
 
 5) Run blockchain indexer - by default it starts parsing from 'latest' block, if you inserted some block with number=block.id - it starts from that block.
 It can recover automatically after failing and should be placed to supervisrod config.
-Average time of ETH block parsing (with good infura ping and on Ubuntu 4xCPU 2Gb RAM) is about 3 seconds VS average ETH new block time is about 10-15 seconds, so it works fine in realtime with ETH blocks, and can recover missing blocks after little downtime of blockchain parsing.
 
 ```
 . env/bin/activate
 python3 ./pool.py debug
 ```
+Average time of ETH block parsing (with good infura ping and on Ubuntu 4xCPU 2Gb RAM) is about 3 seconds VS average ETH new block time is about 10-15 seconds, so it works fine in realtime with ETH blocks, and can recover missing blocks after little downtime of blockchain parsing.
 
 6) Add token updater to crontab - to parse new token's decimals/symbols/total supply each 5 minutes:
 ```
