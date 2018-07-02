@@ -29,7 +29,7 @@ It can recover automatically after failing and should be placed to supervisrod c
 python3 ./pool.py debug
 ```
 
-6) Add token updater to crontab:
+6) Add token updater to crontab - to parse new token's decimals/symbols/total supply each 5 minutes:
 ```
 * * * * */5 /your_env/python3 /path_to/token_info_updater.py
 ```
